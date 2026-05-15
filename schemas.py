@@ -1,0 +1,39 @@
+from pydantic import BaseModel
+
+class UserFeatures(BaseModel):
+    avg_spend: float
+    cv_spend: float
+    transaction_count: float
+    total_spend: float
+    weekend_ratio: float
+    payday_spike_ratio: float
+    active_days: float
+    tx_per_active_day: float
+    weekday_diversity: float
+    monthly_spend_std: float
+    merchant_diversity: float
+    category_diversity: float
+    discount_ratio: float
+    loyalty_ratio: float
+    failed_tx_ratio: float
+    notes_ratio: float
+    credit_card_ratio: float
+    device_score: float
+    mobility_radius: float
+    restaurant_ratio: float
+    grocery_ratio: float
+    fast_food_ratio: float
+    pharmacy_ratio: float
+    fuel_ratio: float
+    electronics_ratio: float
+    travel_ratio: float
+    beauty_ratio: float
+    fashion_ratio: float
+    gaming_ratio: float
+    education_ratio: float
+    books_ratio: float
+
+class PredictionResponse(BaseModel):
+    segment: str
+    cluster_id: int
+    description: str
