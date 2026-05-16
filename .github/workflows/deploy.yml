@@ -11,12 +11,12 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Railway CLI
         run: npm install -g @railway/cli
 
       - name: Deploy to Railway
-        run: railway up --detach
+        run: railway up --detach --service fintech-segmentation-api
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
