@@ -142,6 +142,8 @@ docker run -p 8000:8000 fintech-segmentation-api
 ---
 
 ## Project Structure
+
+---
 fintech-segmentation-api/
 ├── main.py              # FastAPI app and endpoints
 ├── model.py             # Model loading and prediction
@@ -154,6 +156,7 @@ fintech-segmentation-api/
 ├── scaler.pkl
 └── segment_names.pkl
 
+---
 ---
 
 ## Author
