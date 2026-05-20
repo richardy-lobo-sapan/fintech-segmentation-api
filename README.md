@@ -2,6 +2,8 @@
 
 A production-ready REST API that serves a KMeans behavioral segmentation model trained on **278,932 transactions** from an Indonesian digital payment platform (March–May 2024).
 
+📄**Previous Related Project** https://github.com/richardy-lobo-sapan/fintech-behavioral-segmentation
+
 🚀 **Live API:** https://fintech-segmentation-api-production.up.railway.app
 
 📖 **Interactive Docs:** https://fintech-segmentation-api-production.up.railway.app/docs
